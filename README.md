@@ -1,3 +1,9 @@
+# Fork info
+This is a fork of umamusu-translate intended to be used with UmaPatcher which aims to keep the translations a bit more up to date. Original scripts should still work with these new translations. New scripts are intended to be used with Node.js.
+
+Data from GameTora is used with permission from Gertas. The scripts for importing the data are located in [`src/gametora`](src/gametora)
+
+### Original README
 [![Support me on Patreon](https://img.shields.io/badge/dynamic/json?color=%23ff424d&label=Patreon&query=data.attributes.patron_count&suffix=%20trainers&url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F2559100&style=flat-square&logo=patreon&logoColor=%23ff424d)](https://patreon.com/noccu)
 [![Support me on Ko-fi](https://img.shields.io/badge/Ko--fi-Support-%2300aff1?logo=kofi&logoColor=%2300aff1)](https://ko-fi.com/noccyu)
 [![Discord](https://img.shields.io/discord/980222697151807488?logo=discord&logoColor=4bba35&label=Discord)](https://discord.gg/xBMgwh6hHY)
