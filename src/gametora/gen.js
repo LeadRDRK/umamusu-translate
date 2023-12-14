@@ -47,7 +47,7 @@ function emptyIfSame(src, dst) {
 
 function genSkills() {
     const skills = readJson("data/skills.json");
-    const rawSkillDesc = readCsvColumns("static/skill_desc_orig.csv");
+    const rawSkillDesc = readCsvColumns("data/skill_desc_orig.csv");
     const skillDescToOrig = {};
     for (const v of rawSkillDesc) {
         skillDescToOrig[v.replaceAll("\\n", "")] = v;
