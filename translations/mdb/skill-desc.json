@@ -654,7 +654,7 @@
         "レース終盤の中ほどで速度が上がる\\n獲得したスキルの数に応じて\\n効果が高まる": "<size=22>During the second half of the Final Leg,\\nyour speed will increase based on the\\nnumber of skills you have (up to 20)</size>",
         "レース終盤の中ほどで\\n速度がわずかに上がる、獲得した\\nスキルの数に応じて効果が高まる": "<size=22>During the second half of the Final Leg,\\nyour speed will increase based on the\\nnumber of skills you have (up to 20)</size>",
         "レース中盤に持久力を回復し\\nさらに速度がわずかに上がる\\n＜作戦・先行＞": "<size=22>Leader・Recover stamina and slightly increase\\nspeed during the Middle Leg</size>",
-        "ラストスパートの最中に\\n速度がすごく上がる": "<size=22>At a random point in the first half of\\nLast Spurt, your speed will greatly increase</size>",
+        "ラストスパートの最中に\\n速度がすごく上がる": "<size=22>At a random point in the first half of\\nthe Last Spurt, your speed will greatly\\nincrease</size>",
         "レース中盤で中団以降にいると\\nしばらくの間速度が上がる\\n＜作戦・差し＞": "<size=22>Betweener・At a random point during the\\nMiddle Leg, if you're not in the front,\\nyour speed will increase</size>",
         "レース中盤に追い抜くと\\nしばらくの間速度が上がる": "<size=22>If you overtake someone during the Middle\\nLeg, your speed will increase</size>",
         "レース終盤で追い抜くと速度が上がり\\nさらに加速力がちょっと上がり\\n持久力をわずかに回復する＜長距離＞": "<size=22>Long・If you overtake someone during the\\nFinal Leg, your speed will increase, your\\nacceleration will slightly increase, and\\nyou stamina will slightly recover</size>",
@@ -988,6 +988,8 @@
         "レース中盤にしばらくの間\\n速度が少し上がる\\nスタミナが十二分に高いと\\n効果時間が増える＜作戦・差し＞": "<size=22>Betweener・At a random point during the\\nMiddle Leg, your speed will slightly increase;\\nbonus duration if your Stamina stat is\\nat least 1200</size>",
         "レース終盤で追い抜くと\\nしばらくの間前に出る\\nスタミナが十二分に高いと\\n効果時間が増える＜長距離＞": "<size=22>Long・If you overtake someone during the\\nFinal Leg, your speed will increase; bonus\\nduration if your stamina Stat is at least\\n1200</size>",
         "最終コーナーで中団にいた場合\\n残り400mを切ってから速度が上がる\\n中距離レースで中盤に追い抜いていると\\nすごく上がる": "<size=22>If you were in the middle of the pack\\nduring the Final Corner, then with 400\\nm remaining the in race, your speed will\\nincrease; bonus speed if the race is Medium\\ndistance and you overtook someone during\\nthe Middle Leg</size>",
-        "レース終盤始めの方で中団以降にいると\\n加速力が上がる、2200m～2400mの\\nレースなら持久力を少し使い終盤\\n始めの方早めにすごく上がる＜中距離＞": "<size=22>Medium・During the first half of the Final\\nLeg, if you're not in the front, your\\nacceleration will increase; in races between\\n2200 and 2400 m long, your acceleration\\nwill increase greatly, but you will use\\na little extra stamina</size>"
+        "レース終盤始めの方で中団以降にいると\\n加速力が上がる、2200m～2400mの\\nレースなら持久力を少し使い終盤\\n始めの方早めにすごく上がる＜中距離＞": "<size=22>Medium・During the first half of the Final\\nLeg, if you're not in the front, your\\nacceleration will increase; in races between\\n2200 and 2400 m long, your acceleration\\nwill increase greatly, but you will use\\na little extra stamina</size>",
+        "レース中間付近で前の方にいると速度が\\n上がりさらに持久力がわずかに回復する\\n2400ｍ以上のレースだと回復量が\\n増える": "<size=22>Around the middle of the race, if you're\\nnear the front but not leading, your speed\\nwill increase and your stamina will slightly\\nrecover; bonus stamina recovery in races\\nof at least 2400 m</size>",
+        "終盤が迫ったとき前の方にいると速度が\\n少し上がり、加速力が少し上がる\\n2400mのレースだと速度の効果量が\\n増える＜先行・中距離＞": "<size=22>Leader・Medium・If you're in the first half\\nof the pack during the second half of\\nthe Middle Leg, your speed and acceleration\\nwill increase; bonus speed in 2400 m races</size>"
     }
 }
