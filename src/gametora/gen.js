@@ -11,6 +11,8 @@ const NAME_SRC = "name_" + SRC_LANG
 const NAME_DST = "name_" + DST_LANG
 const DESC_SRC = "desc_" + SRC_LANG
 const DESC_DST = "desc_" + DST_LANG
+const TITLE_SRC = "title_" + SRC_LANG
+const TITLE_DST = "title_" + DST_LANG
 
 if (!fs.existsSync(outDir)) {
     fs.mkdirSync(outDir);
@@ -107,5 +109,32 @@ function genCharacters() {
     );
 }
 
+function appendBrackets(str) {
+    if (str[0] != "[" && str[str.length - 1] != "]") {
+        return `[${str}]`
+    }
+    return str
+}
+
+function genUmaTitle() {
+    const cards = readJson("data/character_cards.json");
+
+    var text = {}
+    for (const card of cards) {
+        var titleSrc = appendBrackets(card[TITLE_SRC])
+        var titleDst = appendBrackets(card[TITLE_DST])
+        text[titleSrc] = emptyIfSame(titleSrc, titleDst);
+    }
+
+    writeJson("uma-title.json",
+        {
+            ...base,
+            lineLength: 0,
+            text: text
+        }
+    );
+}
+
 genSkills();
 genCharacters();
+genUmaTitle();
