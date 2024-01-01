@@ -654,7 +654,7 @@
         "レース終盤の中ほどで速度が上がる\\n獲得したスキルの数に応じて\\n効果が高まる": "<size=22>During the second half of the Final Leg,\\nyour speed will increase based on the\\nnumber of skills you have (up to 20)</size>",
         "レース終盤の中ほどで\\n速度がわずかに上がる、獲得した\\nスキルの数に応じて効果が高まる": "<size=22>During the second half of the Final Leg,\\nyour speed will increase based on the\\nnumber of skills you have (up to 20)</size>",
         "レース中盤に持久力を回復し\\nさらに速度がわずかに上がる\\n＜作戦・先行＞": "<size=22>Leader・Recover stamina and slightly increase\\nspeed during the Middle Leg</size>",
-        "ラストスパートの最中に\\n速度がすごく上がる": "<size=22></size>",
+        "ラストスパートの最中に\\n速度がすごく上がる": "<size=22>At a random point in the first half of\\nthe Last Spurt, your speed will greatly\\nincrease</size>",
         "レース中盤で中団以降にいると\\nしばらくの間速度が上がる\\n＜作戦・差し＞": "<size=22>Betweener・At a random point during the\\nMiddle Leg, if you're not in the front,\\nyour speed will increase</size>",
         "レース中盤に追い抜くと\\nしばらくの間速度が上がる": "<size=22>If you overtake someone during the Middle\\nLeg, your speed will increase</size>",
         "レース終盤で追い抜くと速度が上がり\\nさらに加速力がちょっと上がり\\n持久力をわずかに回復する＜長距離＞": "<size=22>Long・If you overtake someone during the\\nFinal Leg, your speed will increase, your\\nacceleration will slightly increase, and\\nyou stamina will slightly recover</size>",
@@ -996,11 +996,7 @@
         "レース終盤始めの方で\\n余力十分ならわずかに前に出る\\n＜逃げ・長距離＞": "<size=22>Runner・Long・If you have enough stamina\\nleft in the first half of the Final Leg,\\nyou will get a small speed boost</size>",
         "ラストスパートの直線で前の方だと\\n加速力が上がる＜逃げ・長距離＞": "<size=22>Runner・Long・If you're in the front during\\nany last spurt straight, your acceleration\\nwill increase</size>",
         "ラストスパートの直線で前の方だと\\n加速力がわずかに上がる\\n＜逃げ・長距離＞": "<size=22>Runner・Long・If you're in the front during\\nany last spurt straight, your acceleration\\nwill slightly increase</size>",
-        "最終コーナー以降に追い抜いていると\\n残り200m地点で速度がすごく上がる\\n＜中距離＞": "<size=22></size>",
-        "レース終盤にしばらくの間少し前に出る\\n芝のレースでは効果が増える＜中距離＞": "<size=22></size>",
-        "スピードとパワーが少し上がる\\nさらに「重」か「不良」のバ場状態なら\\n全ての基礎能力がわずかに上がる\\n＜ダート＞": "<size=22></size>",
         "レース終盤始めの方で余力十分なら前に\\n出る、その後最終直線でわずかに\\n前に出る＜逃げ・長距離＞": "<size=22>Runner・Long・If you have enough stamina\\nleft in the first half of the Final Leg,\\nyou will get a speed boost; then, during\\nthe Final Straight, you will get another\\nspeed boost</size>",
-        "ラストスパートの直線で前の方だと\\n加速力が上がる、その後最終直線で\\nわずかに前に出る＜逃げ・長距離＞": "<size=22>Runner・Long・If you're in the front during\\nany last spurt straight, your acceleration\\nwill increase; then, during the Final\\nStraight, you will get a speed boost</size>",
-        "レース終盤に最終コーナー以降で\\n追い抜こうとするとしばらくの間\\n前に出る＜中距離＞": "<size=22></size>"
+        "ラストスパートの直線で前の方だと\\n加速力が上がる、その後最終直線で\\nわずかに前に出る＜逃げ・長距離＞": "<size=22>Runner・Long・If you're in the front during\\nany last spurt straight, your acceleration\\nwill increase; then, during the Final\\nStraight, you will get a speed boost</size>"
     }
 }
