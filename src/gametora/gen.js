@@ -64,8 +64,10 @@ function genSkills() {
 
         var descSrc = skill[DESC_SRC]
         var descOrig = skillDescToOrig[descSrc];
-        if (descOrig)
-            skillDesc[descOrig] = `<size=22>${dumbWrap(skill[DESC_DST], 48)}</size>`;
+        if (descOrig) {
+            var descDst = skill[DESC_DST];
+            if (descDst) skillDesc[descOrig] = `<size=22>${dumbWrap(descDst, 48)}</size>`;
+        }
         else
             console.log(`Warning: skill desc "${descSrc}" not found`)
     }
@@ -122,7 +124,9 @@ function genUmaTitle() {
     var text = {}
     for (const card of cards) {
         var titleSrc = appendBrackets(card[TITLE_SRC])
-        var titleDst = appendBrackets(card[TITLE_DST])
+        var titleDstOrig = card[TITLE_DST]
+        if (!titleDstOrig) continue;
+        var titleDst = appendBrackets(titleDstOrig)
         text[titleSrc] = emptyIfSame(titleSrc, titleDst);
     }
 
