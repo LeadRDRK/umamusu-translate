@@ -1,5 +1,5 @@
 const fs = require('fs');
-const outDir = './out';
+const { commonInit, readJson, writeJson, readCsvRows } = require('../common');
 const base = {
     version: 101,
     type: "mdb"
@@ -14,23 +14,7 @@ const DESC_DST = "desc_" + DST_LANG
 const TITLE_SRC = "title_" + SRC_LANG
 const TITLE_DST = "title_" + DST_LANG
 
-if (!fs.existsSync(outDir)) {
-    fs.mkdirSync(outDir);
-}
-
-function readJson(path) {
-    return JSON.parse(fs.readFileSync(path, "utf8"));
-}
-
-function writeJson(path, content) {
-    fs.writeFileSync(`${outDir}/${path}`, JSON.stringify(content, null, 4), "utf8");
-    console.log(path)
-}
-
-function readCsvColumns(path) {
-    var content = fs.readFileSync(path, "utf8");
-    return content.split("\n");
-}
+commonInit();
 
 function dumbWrap(text, maxPos) {
     var result = ""
@@ -49,7 +33,7 @@ function emptyIfSame(src, dst) {
 
 function genSkills() {
     const skills = readJson("data/skills.json");
-    const rawSkillDesc = readCsvColumns("data/skill_desc_orig.csv");
+    const rawSkillDesc = readCsvRows("data/skill_desc_orig.csv");
     const skillDescToOrig = {};
     for (const v of rawSkillDesc) {
         skillDescToOrig[v.replaceAll("\\n", "")] = v;
