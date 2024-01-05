@@ -18,12 +18,12 @@ const db = new sqlite3.Database(mdbPath);
 
 function select(columns, table, field, text) {
     return new Promise((resolve, reject) => {
-        db.get(`SELECT ${columns.map(name => `"${name}"`).join(",")} FROM ${table} WHERE ${field} = ?`, text, (err, row) => {
+        db.all(`SELECT ${columns.map(name => `"${name}"`).join(",")} FROM ${table} WHERE ${field} = ?`, text, (err, rows) => {
             if (err) {
                 reject();
                 return;
             }
-            resolve(row);
+            resolve(rows);
         });
     });
 }
@@ -46,20 +46,24 @@ async function genDicts() {
                 const enText = text[jpText];
                 if (enText == "") continue;
 
-                const row = await select(columns, table, field, jpText);
-                if (!row) {
+                const rows = await select(columns, table, field, jpText);
+                if (rows.length == 0) {
                     console.log(`Warning: ${jpText} not found`);
                     continue;
                 }
 
-                const category = row[columns[0]];
-                if (columns.length == 2) {
-                    const index = row[columns[1]];
-                    if (!dict[category]) dict[category] = {};
-                    dict[category][index] = enText;
-                }
-                else {
-                    dict[category] = enText;
+                for (const row of rows) {
+                    const category = row[columns[0]];
+                    if (columns.length == 2) {
+                        const index = row[columns[1]];
+                        console.log(`category: ${category}, index: ${index}`);
+                        if (!dict[category]) dict[category] = {};
+                        dict[category][index] = enText;
+                    }
+                    else {
+                        console.log(`id: ${category}`);
+                        dict[category] = enText;
+                    }
                 }
             }
         }
