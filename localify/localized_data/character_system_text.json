@@ -2336,6 +2336,7 @@
         "12": "Uma Musume, Pretty Derby!",
         "90020": "Happy Valentine's Day",
         "90021": "Happy Valentine's Day",
+        "90221": "Happy Valentine's Day",
         "140008": "chuckling",
         "410004": "chuckling",
         "410005": "chuckling"
@@ -2695,6 +2696,13 @@
         "140002": "Ah…",
         "140008": "Phew.",
         "140014": "Woah…!"
+    },
+    "1091": {
+        "11": "Cygames",
+        "12": "Uma Musume, Pretty Derby!",
+        "1001": "Yay!",
+        "140001": "Yes!",
+        "140014": "Uh…"
     },
     "1093": {
         "11": "Cygames",
