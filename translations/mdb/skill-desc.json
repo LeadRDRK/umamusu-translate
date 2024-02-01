@@ -139,9 +139,9 @@
         "コーナーが得意になり\\n速度が上がる": "<size=22>Your speed will increase on a random corner</size>",
         "コーナーが得意になり\\n速度がわずかに上がる": "<size=22>Your speed will slightly increase on a\\nrandom corner</size>",
         "コーナーが苦手になり\\n速度が少し下がる": "<size=22>Your speed will decrease on a random corner</size>",
-        "華麗なコーナーワークで\\n加速力が上がる": "<size=22>Increases acceleration through elegant\\ncornering</size>",
-        "華麗なコーナーワークで\\n加速力がわずかに上がる": "<size=22>Slightly increases acceleration through\\nelegant cornering</size>",
-        "ぎこちないコーナーワークで\\n加速力が少し下がる": "<size=22>Lightly decreases acceleration because\\nof awkward cornering</size>",
+        "華麗なコーナーワークで\\n加速力が上がる": "<size=22>At a random point on a random corner,\\nyour acceleration will increase</size>",
+        "華麗なコーナーワークで\\n加速力がわずかに上がる": "<size=22>At a random point on a random corner,\\nyour acceleration will slightly increase</size>",
+        "ぎこちないコーナーワークで\\n加速力が少し下がる": "<size=22>At a random point on a random corner,\\nyour acceleration will slightly decrease</size>",
         "無駄のないコーナリングで\\n持久力が回復する": "<size=22>At a random point on any corner, your\\nstamina will recover</size>",
         "無駄のないコーナリングで\\n持久力がわずかに回復する": "<size=22>At a random point on any corner, your\\nstamina will slightly recover</size>",
         "無駄の多いコーナリングで\\n持久力が少し減少する": "<size=22>At a random point on any corner, you will\\nuse a little extra stamina</size>",
@@ -1007,6 +1007,19 @@
         "レース終盤の最終直線に入ったとき\\n中団にいると残り300ｍを切ってから\\n速度が少し上がる、レースを冷静に\\n運べていたならすごく上がる": "<size=22>If you entered the Final Straight in the\\nmiddle of the pack, then when there's\\n300 m remaining in the race, your speed\\nwill increase; it will increase greatly\\nif you didn't panic (kakari) during the\\nrace</size>",
         "レース中盤にスキルを発動すると\\n速度が少し上がる\\nその後レース終盤にスキルを\\n発動すると少し前に出る＜ダート＞": "<size=22>Dirt・If you activate any other skill during\\nthe Middle Leg, your speed will increase;\\nthen, if you activate any other skill\\nduring the Final Leg or beyond, you will\\nget a speed boost</size>",
         "レース中盤にスキルを発動すると\\n速度がちょっと上がる\\nその後レース終盤にスキルを\\n発動するとちょっと前に出る＜ダート＞": "<size=22>Dirt・If you activate any other skill during\\nthe Middle Leg, your speed will marginally\\nincrease; then, if you activate any other\\nskill during the Final Leg or beyond,\\nyou will get a marginal speed boost</size>",
-        "レース中盤に前の方にいると\\n持久力をわずかに回復する\\n＜ダート＞": "<size=22>Dirt・At a random point during the Middle\\nLeg, if you're in the first half of the\\npack, your stamina will slightly recover</size>"
+        "レース中盤に前の方にいると\\n持久力をわずかに回復する\\n＜ダート＞": "<size=22>Dirt・At a random point during the Middle\\nLeg, if you're in the first half of the\\npack, your stamina will slightly recover</size>",
+        "レース前半中団以降に控え続けていると\\nレース終盤かつ最終コーナー以降に\\n少し前に出る、長距離レースなら\\n効果が増える": "<size=22>If you stayed in the back of the pack\\nfor the entire first half of the race,\\nthen during the Final Corner, you will\\nget a speed boost; the effect is stronger\\nin Long races</size>",
+        "レース中間付近で前の方から\\n仕掛け始める時に少しの間速度が上がる\\nマイルレースなら効果が増える": "<size=22>Around the middle of the race, if you're\\nnear the front and about to overtake someone,\\nyour speed will increase; the effect is\\nstronger in Mile races</size>",
+        "コーナーで速度が上がる＜短距離＞": "<size=22>Short・At a random point on a random corner,\\nyour speed will increase</size>",
+        "レース終盤始めの方で\\n余力十分なら前に出る\\n＜追込・長距離＞": "<size=22>Chaser・Long・If you have plenty of stamina\\nleft during the first half of the Final\\nLeg, your speed will increase</size>",
+        "レース終盤始めの方で\\n余力十分ならわずかに前に出る\\n＜追込・長距離＞": "<size=22>Chaser・Long・If you have plenty of stamina\\nleft during the first half of the Final\\nLeg, your speed will slightly increase</size>",
+        "スタート時に加速力が上がる\\n＜短距離＞": "<size=22>Short・At the start of the race, your acceleration\\nwill increase</size>",
+        "スタート時に加速力がわずかに上がる\\n＜短距離＞": "<size=22>Short・At the start of the race, your acceleration\\nwill slightly increase</size>",
+        "最終コーナーで速度がすごく上がる": "<size=22>During the Final Corner, your speed will\\ngreatly increase</size>",
+        "レース終盤始めの方で\\n余力十分ならすごく前に出る\\n＜追込・長距離＞": "<size=22>Chaser・Long・If you have plenty of stamina\\nleft during the first half of the Final\\nLeg, your speed will greatly increase</size>",
+        "レース中盤に速度がすごく上がる\\n＜作戦・先行＞": "<size=22>Leader・At a random point in the Middle\\nLeg, your speed will greatly increase</size>",
+        "コーナーで加速力が上がり\\nさらに速度がわずかに上がる": "<size=22>At a random point on a random corner,\\nyour acceleration will increase and your\\nspeed will slightly increase</size>",
+        "レース中盤が迫ったとき前の方にいると\\nしばらくの間速度が上がる＜短距離＞": "<size=22>Short・If you're in the first half of the\\npack during the second half of the Opening\\nLeg, your speed will increase</size>",
+        "レース後半に3番手以降だと\\nしばらくの間速度が上がる\\n＜作戦・先行＞": "<size=22>Leader・If you're 3rd or worse during the\\nsecond half of the race, your speed will\\nincrease</size>"
     }
 }
