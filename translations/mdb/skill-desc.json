@@ -202,8 +202,8 @@
         "レース終盤に加速力が上がる\\n＜短距離＞": "<size=22>Short・At a random point during the Final\\nLeg, your acceleration will increase</size>",
         "レース終盤に加速力がわずかに上がる\\n＜短距離＞": "<size=22>Short・At a random point during the Final\\nLeg, your acceleration will slightly increase</size>",
         "レース中盤に後ろの方だと\\nわずかに疲れにくくなり\\n加速力がちょっと上がる＜短距離＞": "<size=22>Short・If you're in the second half of\\nthe pack during the Middle Leg, your stamina\\nwill slightly recover and your acceleration\\nwill slightly increase</size>",
-        "レース終盤に後ろの方だと\\n速度が上がり、加速力がちょっと上がる\\n＜短距離＞": "<size=22>Short・Spurts become easier when in the\\nback of the pack during the Final Leg</size>",
-        "レース終盤に後ろの方だと\\n速度がわずかに上がり、加速力が\\nほんのちょっと上がる＜短距離＞": "<size=22>Short・Spurts become slightly easier when\\nin the back of the pack during the Final\\nLeg</size>",
+        "レース終盤に後ろの方だと\\n速度が上がり、加速力がちょっと上がる\\n＜短距離＞": "<size=22>Short・If you're in the second half of\\nthe pack at a random point during the\\nFinal Leg, your speed will increase and\\nyour acceleration will slightly increase</size>",
+        "レース終盤に後ろの方だと\\n速度がわずかに上がり、加速力が\\nほんのちょっと上がる＜短距離＞": "<size=22>Short・If you're in the second half of\\nthe pack at a random point during the\\nFinal Leg, your speed will slightly increase\\nand your acceleration will marginally\\nincrease</size>",
         "レース中盤が迫ったとき前方にいると\\n速度が上がる＜マイル＞": "<size=22>Mile・If you're in the first half of the\\npack during the second half of the Opening\\nLeg, your speed will increase</size>",
         "レース中盤が迫ったとき前方にいると\\n速度がわずかに上がる＜マイル＞": "<size=22>Mile・If you're in the first half of the\\npack during the second half of the Opening\\nLeg, your speed will slightly increase</size>",
         "レース中盤が迫ったとき後ろの方だと\\n疲れにくくなり\\n前の速度を少し下げる＜マイル＞": "<size=22>Mile・If you're in the second half of the\\npack during the second half of the Opening\\nLeg, your stamina will recover and the\\nspeed of umas ahead of you will decrease</size>",
@@ -1020,6 +1020,9 @@
         "レース中盤に速度がすごく上がる\\n＜作戦・先行＞": "<size=22>Leader・At a random point in the Middle\\nLeg, your speed will greatly increase</size>",
         "コーナーで加速力が上がり\\nさらに速度がわずかに上がる": "<size=22>At a random point on a random corner,\\nyour acceleration will increase and your\\nspeed will slightly increase</size>",
         "レース中盤が迫ったとき前の方にいると\\nしばらくの間速度が上がる＜短距離＞": "<size=22>Short・If you're in the first half of the\\npack during the second half of the Opening\\nLeg, your speed will increase</size>",
-        "レース後半に3番手以降だと\\nしばらくの間速度が上がる\\n＜作戦・先行＞": "<size=22>Leader・If you're 3rd or worse during the\\nsecond half of the race, your speed will\\nincrease</size>"
+        "レース後半に3番手以降だと\\nしばらくの間速度が上がる\\n＜作戦・先行＞": "<size=22>Leader・If you're 3rd or worse during the\\nsecond half of the race, your speed will\\nincrease</size>",
+        "レース後半に後方から追い抜いていた\\n場合、残り150mを切ってから前の方に\\nいると少しの間速度が上がる": "<size=22>If you overtook someone in the back of\\nthe pack during the second half of the\\nrace, then when there's less than 150\\nm remaining and you're near the front\\nof the pack, your speed will increase</size>",
+        "レース後半に後方から追い抜いていた\\n場合、残り150mを切ってから前の方に\\nいると少しの間速度がすごく上がる": "<size=22>If you overtook someone in the back of\\nthe pack during the second half of the\\nrace, then when there's less than 150\\nm remaining and you're near the front\\nof the pack, your speed will greatly increase</size>",
+        "レース終盤に後ろの方だと\\n速度が上がり、加速力がわずかに上がる\\n＜短距離＞": "<size=22>Short・If you're in the second half of\\nthe pack at a random point during the\\nFinal Leg, your speed will increase and\\nyour acceleration will slightly increase</size>"
     }
 }
