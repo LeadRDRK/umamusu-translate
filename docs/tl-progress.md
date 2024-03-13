@@ -127,6 +127,7 @@ Neo Universe | Complete | [LotoDS]
 Rice Shower  | Complete, In Progress | [Ben][] (ep 1-4) + MTL, [UmaTL] (bocchi)☆
 Sakura Bakushin O | Complete | [noccu][]
 Sakura Chiyono O | Complete | [LotoDS][]
+Satono Crown | Complete | [LotoDS][]
 Satono Diamond | Exists | [Riersa] (MTL edit?)
 Seiun Sky | Complete | [CatNipHoarder] & [Holo]
 Shinko Windy | Complete | [LotoDS][]
@@ -144,7 +145,7 @@ TM Opera O | Complete | [UmaTL] (noccu)☆
 Tokai Teio | Complete | [CatNipHoarder] & [Holo]
 Twin Turbo | Complete| [Riersa]
 Tamamo Cross | Complete | [LotoDS][]
-Vivlos | In Progress | [LotoDS]
+Vivlos | Complete | [LotoDS][]
 Vodka | Complete, Exists | MTL, Anonymous Raccoon
 Yaeno Muteki | Complete | [LotoDS]
 Yamanin Zephyr | Complete | [Director Kok][]
