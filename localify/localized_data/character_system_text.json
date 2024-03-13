@@ -201,7 +201,8 @@
         "410005": "Fufu",
         "410006": "Ara~...",
         "410007": "Ara~...",
-        "410008": "Ara~..."
+        "410008": "Ara~...",
+        "920000": "I'll do my best~"
     },
     "1012": {
         "11": "Cygames",
@@ -541,7 +542,8 @@
         "20040": "I'm coming!",
         "410000": "I'm coming!",
         "410002": "Ehhen!",
-        "410003": "Ehhen!"
+        "410003": "Ehhen!",
+        "920000": "I'm coming!"
     },
     "1025": {
         "11": "Cygames",
@@ -1089,7 +1091,8 @@
     "1045": {
         "11": "Cygames",
         "12": "Uma Musume, Pretty Derby!",
-        "20041": "Hmhmhmm…"
+        "20041": "Hmhmhmm…",
+        "920000": "I'll do my best~"
     },
     "1046": {
         "11": "Cygames",
@@ -1568,7 +1571,6 @@
         "10000": "The farmer gave me some carrots \\nagain. I'll give them to you later!",
         "10001": "I'll keep my promise to my trainer! \\nLet's get a lot of clothes together!",
         "10002": "Hey, hey, did you see the magazine \\nfeature? I'm the \"horsegirl Who Gives \\nYou Courage\"! Oh, my gosh!",
-        "10003": "Trainers, do you want to do \\nthe shuttlecock? It's fun \\nto make your face black!",
         "10004": "We all made chocolate together. I was \\nin charge of tasting, so I was able \\nto eat a full meal.",
         "10005": "Since I met my trainer, things have \\nbeen really interesting! That's why I \\nbought so many chocolates!",
         "10006": "It would be so nice to run along the \\nMilky Way! I want to race in the sky!",
@@ -1776,7 +1778,8 @@
         "400013": "Good luck at the event! Did you \\nreceive all of the brochures? I'll \\nhelp you carry them!",
         "410001": "I'm so happy!!!",
         "410002": "Yay!",
-        "410003": "Yay!"
+        "410003": "Yay!",
+        "920000": "Eeeeeeeeee!"
     },
     "1053": {
         "11": "Cygames",
@@ -1788,7 +1791,8 @@
     },
     "1055": {
         "11": "Cygames",
-        "12": "Uma Musume, Pretty Derby!"
+        "12": "Uma Musume, Pretty Derby!",
+        "920000": "I'm coming!"
     },
     "1056": {
         "11": "Cygames",
@@ -1804,7 +1808,8 @@
         "11": "Cygames",
         "12": "Uma Musume, Pretty Derby!",
         "13": "She said it's today's login bonus.",
-        "140008": "Hmm?"
+        "140008": "Hmm?",
+        "920000": "Let's go!"
     },
     "1058": {
         "11": "Cygames",
@@ -2049,7 +2054,8 @@
         "410005": "tee-hee",
         "410006": "Haha ……",
         "410007": "Haha ……",
-        "410008": "Haha ……"
+        "410008": "Haha ……",
+        "920000": "All right, all right."
     },
     "1059": {
         "11": "Cygames",
@@ -2365,6 +2371,15 @@
         "80000": "that's enough for today",
         "140008": "Phew."
     },
+    "1063": {
+        "11": "Cygames",
+        "12": "Uma Musume, Pretty Derby!",
+        "20038": "Let's begin.",
+        "140002": "Oh…",
+        "140003": "Splendid work!",
+        "140006": "Splendid work!",
+        "140008": "Phew."
+    },
     "1064": {
         "11": "Cygames",
         "12": "Uma Musume, Pretty Derby!",
@@ -2654,6 +2669,11 @@
         "140014": "Oh my…",
         "140017": "Oh…"
     },
+    "1080": {
+        "11": "Cygames",
+        "12": "Uma Musume, Pretty Derby!",
+        "140008": "Phew."
+    },
     "1083": {
         "11": "Cygames",
         "12": "Uma Musume, Pretty Derby!",
@@ -2709,7 +2729,8 @@
         "12": "Uma Musume, Pretty Derby!",
         "1001": "Yay!",
         "140001": "Yes!",
-        "140014": "Uh…"
+        "140014": "Uh…",
+        "920000": "I'm coming!"
     },
     "1093": {
         "11": "Cygames",
@@ -2927,6 +2948,12 @@
     "1107": {
         "11": "Cygames",
         "12": "Uma Musume, Pretty Derby!"
+    },
+    "1108": {
+        "11": "Cygames",
+        "12": "Uma Musume, Pretty Derby!",
+        "140001": "Okay…!",
+        "140018": "Oh…"
     },
     "9001": {
         "200004": "Photo Studio lets you take \nphotos of your horsegirls♪",
