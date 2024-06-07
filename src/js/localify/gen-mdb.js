@@ -1,5 +1,5 @@
 const sqlite3 = require("sqlite3");
-const { commonInit, readJson, writeJson } = require('../common');
+const { readJson, writeJson } = require('../common');
 const dictColumns = {
     text_data: ["category", "index"],
     race_jikkyo_comment: ["id"],
@@ -13,7 +13,6 @@ if (!mdbPath) {
     return;
 }
 
-commonInit();
 const db = new sqlite3.Database(mdbPath);
 
 function select(columns, table, field, text) {

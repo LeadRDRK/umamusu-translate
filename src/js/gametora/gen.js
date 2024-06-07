@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { commonInit, readJson, writeJson, readCsvRows } = require('../common');
+const { readJson, writeJson, readCsvRows } = require('../common');
 const base = {
     version: 101,
     type: "mdb"
@@ -13,8 +13,6 @@ const DESC_SRC = "desc_" + SRC_LANG
 const DESC_DST = "desc_" + DST_LANG
 const TITLE_SRC = "title_" + SRC_LANG
 const TITLE_DST = "title_" + DST_LANG
-
-commonInit();
 
 function dumbWrap(text, maxPos) {
     var result = ""
