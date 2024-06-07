@@ -1,49 +1,59 @@
-import sys
-from os.path import realpath
 import sqlite3
-from pathlib import Path, PurePath
+import sys
 from importlib import import_module
+from os.path import realpath
+from pathlib import Path, PurePath
 
 sys.path.append(realpath("src"))
-import common
-import helpers
+from common import patch, utils
+from common.constants import GAME_MASTER_FILE
+from common.types import TranslationFile
+from datatransfer import DataTransfer
+
 checkPatched = import_module("import").checkPatched
 
-
-def extract(db: sqlite3.Connection, stmt: str, savePath: Path):
+def extract(db: sqlite3.Connection, stmt: str, savePath: Path, dt=False):
     # In the spirit of the original db patch, we don't modify old files to keep the db order
     savePath = savePath.with_suffix(".json")
     try:
-        oldData = common.TranslationFile(savePath)
+        oldData = TranslationFile(savePath)
     except FileNotFoundError:
         print(f"File not found, creating new: {savePath}")
         oldData = None
+    transferExisting = DataTransfer(oldData) if dt else None
     newData = dict()
     cur = db.execute(stmt)
+
     for row in cur:
-        val = row[0]
-        newData[val] = oldData.textBlocks.get(val, "") if oldData else ""
+        jpVal = row[0]
+        enVal = oldData.textBlocks.get(jpVal, "") if oldData else ""
+        if transferExisting and enVal == "":
+            lookupBlock = {"jpText": jpVal, "enText": enVal}
+            transferExisting(lookupBlock)
+            enVal = lookupBlock.get("enText", "")
+        newData[jpVal] = enVal
     if oldData:
         oldData.textBlocks = newData
         oldData.save()
     else:
         o = {'version': 101, 'type': "mdb", 'lineLength': 0, 'text': newData}
-        helpers.writeJson(savePath, o)
+        utils.writeJson(savePath, o)
 
 
 def parseArgs():
-    ap = common.Args("Extracts master.mdb data for translation", defaultArgs=False)
-    ap.add_argument("-src", default=common.GAME_MASTER_FILE, help="Path to master.mdb file")
+    ap = patch.Args("Extracts master.mdb data for translation", defaultArgs=False)
+    ap.add_argument("-src", default=GAME_MASTER_FILE, help="Path to master.mdb file")
     ap.add_argument("-dst", default="translations/mdb", type=Path, help="Extraction path")
     ap.add_argument("--no-skill-data", action="store_true", help="Skip extracting skill data (requires nodeJS)")
     ap.add_argument("--no-text", action="store_true", help="Skip extracting standard text data")
     ap.add_argument("-f", "--file", help="Extract specific file name (as found in index.json)")
     ap.add_argument("--forced", action="store_true", help="Ignore mdb patch state")
+    ap.add_argument("-dt", "--datatransfer", action="store_true", help="Try to Find similar entries")
     return ap.parse_args()
 
 class MdbIndex:
     def __init__(self, idxPath: str):
-        self.idx = helpers.readJson(idxPath)
+        self.idx = utils.readJson(idxPath)
     def parseListSQL(self, l: list):
         base = list()
         complex = list()
@@ -89,7 +99,7 @@ def main():
         print("Extracting standard text...")
         with sqlite3.connect(args.src) as db:
             for stmt, outPathRel in MdbIndex("src/mdb/index.json").parseSQL(args.file):
-                extract(db, stmt, args.dst / outPathRel)
+                extract(db, stmt, args.dst / outPathRel, args.datatransfer)
         db.close()
     if not args.no_skill_data:
         print("Extracting skill data...")
@@ -97,7 +107,7 @@ def main():
         from subprocess import run
         run(["node", "src/scripts/extract-skill-data.js", args.src], check=True)
         import textprocess
-        textprocess.processFiles(common.Args.fake(src="translations/mdb/alt/skill-desc.json", lineLength=-1, targetLines=99, forceResize=True))
+        textprocess.main(patch.Args.fake(src=Path("translations/mdb/alt/skill-desc.json"), lineLength=-1, targetLines=99, forceResize=True))
 
 
 if __name__ == '__main__':
