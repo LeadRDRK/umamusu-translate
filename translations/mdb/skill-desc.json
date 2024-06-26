@@ -1102,6 +1102,10 @@
         "レース終盤が迫ったとき中団以降だと\\n速度がすごく上がる＜短距離/マイル＞": "<size=22>Short/Mile・If you're not near the front\\nduring the second half of the Middle Leg,\\nyour speed will greatly increase</size>",
         "レース終盤始めの方で中団以降にいると\\n加速力が上がる\\nその後残り300mを切っているとき\\n速度がわずかに上がる＜中距離＞": "<size=22>Medium・During the first half of the Final\\nLeg, if you're not near the front, your\\nacceleration will increase; then, with\\n300 m remaining, your speed will slightly\\nincrease</size>",
         "レース中盤のコーナーで\\nすごく前に出る＜先行・中距離＞": "<size=22>Leader・Medium・Your speed will greatly\\nincrease on a random corner during the\\nMiddle Leg</size>",
-        "レース中盤始めの方に前の方だと\\n速度がわずかに上がり持久力を回復する\\n＜中距離＞": "<size=22>Medium・If you're in the first half of\\nthe pack during the first half of the\\nMiddle Leg, your speed will slightly increase\\nand your stamina will recover</size>"
+        "レース中盤始めの方に前の方だと\\n速度がわずかに上がり持久力を回復する\\n＜中距離＞": "<size=22>Medium・If you're in the first half of\\nthe pack during the first half of the\\nMiddle Leg, your speed will slightly increase\\nand your stamina will recover</size>",
+        "レース中間地点で中団にいると\\n速度が上がる\\n中距離レースならすごく上がる": "<size=22>If you're in the middle of the pack halfway\\nthrough the race, your speed will increase;\\nit will increase greatly in Medium races</size>",
+        "レース終盤が迫ったとき中団以降に\\nいるとしばらくの間速度が上がる\\nパワーが十二分に高いと効果が増える\\n＜差し・中距離＞": "<size=22>Betweener・Medium・If you're not in the\\nfront during the second half of the Middle\\nLeg, your speed will increase; the effect\\nis slightly stronger if your base Power\\nis at least 1200</size>",
+        "東京レース場ならレース終盤始めの方に\\nしばらくの間前に出て、加速力が\\nちょっと上がる＜中距離＞": "<size=22>Medium・In Tokyo races during the first\\nhalf of the Final Leg, your speed will\\nincrease and your acceleration will slightly\\nincrease</size>",
+        "レース終盤始めの方に\\nすごく前に出る＜中距離＞": "<size=22>Medium・During the first half of the Final\\nLeg, your speed will greatly increase</size>"
     }
 }
