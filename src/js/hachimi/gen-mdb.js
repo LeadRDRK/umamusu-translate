@@ -35,7 +35,8 @@ const removeBrFiles = new Set([
     "uma-secrets",
     "scenario-desc",
     "skill-desc",
-    "missions"
+    "missions",
+    "4koma-titles"
 ]);
 
 const removeSizeFiles = new Set([
