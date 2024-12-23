@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "hachimi_lib": "github:Hachimi-Hachimi/hachimi_lib_js#823f1f018d3791d45a0d77cbc64acc3d1f35baf8",
     "sqlite3": "^5.1.6"
   }
 }

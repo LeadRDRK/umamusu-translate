@@ -1,9 +1,35 @@
 const { readJson, writeJson, walkDir } = require('../common');
+const { wrapText, initSync: hachimiInitSync } = require("hachimi_lib");
+const fs = require("fs");
+const path = require("path");
 
 const useMachineTl = process.argv[2] == "usetheforceluke";
 
 const homeTlDir = "../../../translations/home";
 const storyTlDir = "../../../translations/story";
+
+// config
+const LINE_WIDTH_MULTIPLIER = 1.75;
+const STORY_LINE_COUNT_OFFSET = 1;
+const TEXT_FRAME_FONT_SIZE_MULTIPLIER = 0.9;
+
+// hachimi/src/il2cpp/hook/umamusume/StoryTimelineData.rs
+const CLIP_TEXT_LINE_WIDTH = 21;
+const CLIP_TEXT_LINE_COUNT = 3;
+const CLIP_TEXT_FONT_SIZE_DEFAULT = 42;
+
+const STORY_VIEW_CLIP_TEXT_LINE_WIDTH = 32;
+
+// calculated parameters
+const PARAMS = {
+    lineCount: CLIP_TEXT_LINE_COUNT + STORY_LINE_COUNT_OFFSET,
+    fontSize: Math.round(CLIP_TEXT_FONT_SIZE_DEFAULT * TEXT_FRAME_FONT_SIZE_MULTIPLIER),
+    lineWidth: Math.round(CLIP_TEXT_LINE_WIDTH / TEXT_FRAME_FONT_SIZE_MULTIPLIER),
+    storyViewLineWidth: Math.round(STORY_VIEW_CLIP_TEXT_LINE_WIDTH / TEXT_FRAME_FONT_SIZE_MULTIPLIER),
+};
+
+// extras
+const STORY_VIEW_MAX_LINES = 3;
 
 function genStoryDicts(dir, getOutputPath) {
     walkDir(dir, entry => {
@@ -34,7 +60,27 @@ function genStoryDicts(dir, getOutputPath) {
 
             let newBlock = {};
             if (block.enName) newBlock.name = block.enName;
-            if (block.enText) newBlock.text = block.enText;
+            if (block.enText) {
+                let isStoryView = dict.storyId.length == 9 && (
+                    dict.storyId.startsWith("02") ||
+                    dict.storyId.startsWith("04") ||
+                    dict.storyId.startsWith("09")
+                );
+
+                const text = block.enText.replace(/ {2,}/g, " "); // Remove duplicate spaces
+                const lines = text.split(/ *(?:\n|\\n) */);
+
+                // If used in story view, only wrap if line count exceeds limit, there's plenty of horizontal space.
+                // Otherwise (in training event view), wrap if the lines are too long, no need to care about line count.
+                const needsWrap = isStoryView ?
+                    lines.length > STORY_VIEW_MAX_LINES :
+                    lines.some(line => line.length > Math.round(PARAMS.lineWidth * LINE_WIDTH_MULTIPLIER));
+                const lineWidth = isStoryView ? PARAMS.storyViewLineWidth : PARAMS.lineWidth;
+
+                newBlock.text = needsWrap ?
+                    wrapText(lines.join(" "), lineWidth, LINE_WIDTH_MULTIPLIER).join("\n") :
+                    text;
+            }
 
             if (block.choices) {
                 let empty = true;
@@ -79,6 +125,8 @@ function genStoryDicts(dir, getOutputPath) {
         writeJson(getOutputPath(dict.storyId), newDict);
     });
 }
+
+hachimiInitSync(fs.readFileSync(path.join(require.resolve("hachimi_lib"), "..", "hachimi_lib_bg.wasm")));
 
 genStoryDicts(homeTlDir, storyId => {
     let p1 = storyId.slice(0, 5);
