@@ -78,7 +78,7 @@ function genStoryDicts(dir, getOutputPath) {
                 const lineWidth = isStoryView ? PARAMS.storyViewLineWidth : PARAMS.lineWidth;
 
                 newBlock.text = needsWrap ?
-                    wrapText(lines.join(" "), lineWidth, LINE_WIDTH_MULTIPLIER).join("\n") :
+                    wrapText(lines.join(" "), lineWidth, LINE_WIDTH_MULTIPLIER).join(isStoryView ? " \n" : "\n") :
                     text;
             }
 
