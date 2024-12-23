@@ -1,4 +1,4 @@
-const { readJson, writeJson, walkDir, replaceLineBreaksWithSpace } = require('../common');
+const { readJson, writeJson, walkDir } = require('../common');
 
 const useMachineTl = process.argv[2] == "usetheforceluke";
 
@@ -34,7 +34,7 @@ function genStoryDicts(dir, getOutputPath) {
 
             let newBlock = {};
             if (block.enName) newBlock.name = block.enName;
-            if (block.enText) newBlock.text = replaceLineBreaksWithSpace(block.enText);
+            if (block.enText) newBlock.text = block.enText;
 
             if (block.choices) {
                 let empty = true;
@@ -72,7 +72,10 @@ function genStoryDicts(dir, getOutputPath) {
             console.log("Warning: validation failed for " + path);
         }
 
-        let newDict = {text_block_list};
+        let newDict = {
+            no_wrap: true,
+            text_block_list
+        };
         writeJson(getOutputPath(dict.storyId), newDict);
     });
 }
